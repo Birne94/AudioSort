@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Grid" x:Key="BackgroundFrame">
+        <Setter Property="Background">
+            <Setter.Value>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Offset="0" Color="#888888" />
+                    <GradientStop Offset="1" Color="#f1f1f1" />
+                </LinearGradientBrush>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="DockPanel" x:Key="ToolbarFrame">
+        <Setter Property="Height" Value="30" />
+        <Setter Property="Background" Value="#4c4c4c" />
+    </Style>
+
+    <Style TargetType="DockPanel" x:Key="ButtonFrame">
+        <Setter Property="Height" Value="40" />
+        <Setter Property="Background" Value="#4c4c4c" />
+    </Style>
+</ResourceDictionary>

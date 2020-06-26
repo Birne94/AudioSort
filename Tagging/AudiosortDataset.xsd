@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AudiosortDataset" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AudiosortDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AudiosortDataset" msprop:Generator_UserDSName="AudiosortDataset">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Interpreten" msprop:Generator_TableClassName="InterpretenDataTable" msprop:Generator_TableVarName="tableInterpreten" msprop:Generator_TablePropName="Interpreten" msprop:Generator_RowDeletingName="InterpretenRowDeleting" msprop:Generator_UserTableName="Interpreten" msprop:Generator_RowChangingName="InterpretenRowChanging" msprop:Generator_RowEvHandlerName="InterpretenRowChangeEventHandler" msprop:Generator_RowDeletedName="InterpretenRowDeleted" msprop:Generator_RowEvArgName="InterpretenRowChangeEvent" msprop:Generator_RowChangedName="InterpretenRowChanged" msprop:Generator_RowClassName="InterpretenRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="interpret_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columninterpret_id" msprop:Generator_ColumnPropNameInRow="interpret_id" msprop:Generator_ColumnPropNameInTable="interpret_idColumn" msprop:Generator_UserColumnName="interpret_id" type="xs:int" minOccurs="0" />
+              <xs:element name="interpret_name" msprop:Generator_ColumnVarNameInTable="columninterpret_name" msprop:Generator_ColumnPropNameInRow="interpret_name" msprop:Generator_ColumnPropNameInTable="interpret_nameColumn" msprop:Generator_UserColumnName="interpret_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Titel" msprop:Generator_TableClassName="TitelDataTable" msprop:Generator_TableVarName="tableTitel" msprop:Generator_TablePropName="Titel" msprop:Generator_RowDeletingName="TitelRowDeleting" msprop:Generator_UserTableName="Titel" msprop:Generator_RowChangingName="TitelRowChanging" msprop:Generator_RowEvHandlerName="TitelRowChangeEventHandler" msprop:Generator_RowDeletedName="TitelRowDeleted" msprop:Generator_RowEvArgName="TitelRowChangeEvent" msprop:Generator_RowChangedName="TitelRowChanged" msprop:Generator_RowClassName="TitelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="titel_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columntitel_id" msprop:Generator_ColumnPropNameInRow="titel_id" msprop:Generator_ColumnPropNameInTable="titel_idColumn" msprop:Generator_UserColumnName="titel_id" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_name" msprop:nullValue="" msprop:Generator_ColumnPropNameInRow="titel_name" msprop:Generator_ColumnVarNameInTable="columntitel_name" msprop:Generator_ColumnPropNameInTable="titel_nameColumn" msprop:Generator_UserColumnName="titel_name" type="xs:string" minOccurs="0" />
+              <xs:element name="titel_interpret" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="titel_interpret" msprop:Generator_ColumnVarNameInTable="columntitel_interpret" msprop:Generator_ColumnPropNameInTable="titel_interpretColumn" msprop:Generator_UserColumnName="titel_interpret" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_album" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="titel_album" msprop:Generator_ColumnVarNameInTable="columntitel_album" msprop:Generator_ColumnPropNameInTable="titel_albumColumn" msprop:Generator_UserColumnName="titel_album" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_dauer" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="titel_dauer" msprop:Generator_ColumnVarNameInTable="columntitel_dauer" msprop:Generator_ColumnPropNameInTable="titel_dauerColumn" msprop:Generator_UserColumnName="titel_dauer" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_track" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="titel_track" msprop:Generator_ColumnVarNameInTable="columntitel_track" msprop:Generator_ColumnPropNameInTable="titel_trackColumn" msprop:Generator_UserColumnName="titel_track" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_pfad" msprop:nullValue="" msprop:Generator_ColumnPropNameInRow="titel_pfad" msprop:Generator_ColumnVarNameInTable="columntitel_pfad" msprop:Generator_ColumnPropNameInTable="titel_pfadColumn" msprop:Generator_UserColumnName="titel_pfad" type="xs:string" minOccurs="0" />
+              <xs:element name="titel_genre" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="titel_genre" msprop:Generator_ColumnVarNameInTable="columntitel_genre" msprop:Generator_ColumnPropNameInTable="titel_genreColumn" msprop:Generator_UserColumnName="titel_genre" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_jahr" msprop:nullValue="-1" msprop:Generator_ColumnPropNameInRow="titel_jahr" msprop:Generator_ColumnVarNameInTable="columntitel_jahr" msprop:Generator_ColumnPropNameInTable="titel_jahrColumn" msprop:Generator_UserColumnName="titel_jahr" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_bewertung" msprop:nullValue="0" msprop:Generator_ColumnPropNameInRow="titel_bewertung" msprop:Generator_ColumnVarNameInTable="columntitel_bewertung" msprop:Generator_ColumnPropNameInTable="titel_bewertungColumn" msprop:Generator_UserColumnName="titel_bewertung" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Album" msprop:Generator_TableClassName="AlbumDataTable" msprop:Generator_TableVarName="tableAlbum" msprop:Generator_TablePropName="Album" msprop:Generator_RowDeletingName="AlbumRowDeleting" msprop:Generator_UserTableName="Album" msprop:Generator_RowChangingName="AlbumRowChanging" msprop:Generator_RowEvHandlerName="AlbumRowChangeEventHandler" msprop:Generator_RowDeletedName="AlbumRowDeleted" msprop:Generator_RowEvArgName="AlbumRowChangeEvent" msprop:Generator_RowChangedName="AlbumRowChanged" msprop:Generator_RowClassName="AlbumRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="album_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnalbum_id" msprop:Generator_ColumnPropNameInRow="album_id" msprop:Generator_ColumnPropNameInTable="album_idColumn" msprop:Generator_UserColumnName="album_id" type="xs:int" />
+              <xs:element name="album_name" msprop:Generator_ColumnVarNameInTable="columnalbum_name" msprop:Generator_ColumnPropNameInRow="album_name" msprop:Generator_ColumnPropNameInTable="album_nameColumn" msprop:Generator_UserColumnName="album_name" type="xs:string" minOccurs="0" />
+              <xs:element name="album_image" msprop:Generator_ColumnVarNameInTable="columnalbum_image" msprop:Generator_ColumnPropNameInRow="album_image" msprop:Generator_ColumnPropNameInTable="album_imageColumn" msprop:Generator_UserColumnName="album_image" type="xs:string" minOccurs="0" />
+              <xs:element name="album_jahr" msprop:Generator_ColumnVarNameInTable="columnalbum_jahr" msprop:Generator_ColumnPropNameInRow="album_jahr" msprop:Generator_ColumnPropNameInTable="album_jahrColumn" msprop:Generator_UserColumnName="album_jahr" type="xs:int" minOccurs="0" />
+              <xs:element name="album_interpret" msprop:Generator_ColumnVarNameInTable="columnalbum_interpret" msprop:Generator_ColumnPropNameInRow="album_interpret" msprop:Generator_ColumnPropNameInTable="album_interpretColumn" msprop:Generator_UserColumnName="album_interpret" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Genre" msprop:Generator_TableClassName="GenreDataTable" msprop:Generator_TableVarName="tableGenre" msprop:Generator_TablePropName="Genre" msprop:Generator_RowDeletingName="GenreRowDeleting" msprop:Generator_UserTableName="Genre" msprop:Generator_RowChangingName="GenreRowChanging" msprop:Generator_RowEvHandlerName="GenreRowChangeEventHandler" msprop:Generator_RowDeletedName="GenreRowDeleted" msprop:Generator_RowEvArgName="GenreRowChangeEvent" msprop:Generator_RowChangedName="GenreRowChanged" msprop:Generator_RowClassName="GenreRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="genre_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columngenre_id" msprop:Generator_ColumnPropNameInRow="genre_id" msprop:Generator_ColumnPropNameInTable="genre_idColumn" msprop:Generator_UserColumnName="genre_id" type="xs:int" />
+              <xs:element name="genre_name" msprop:Generator_ColumnVarNameInTable="columngenre_name" msprop:Generator_ColumnPropNameInRow="genre_name" msprop:Generator_ColumnPropNameInTable="genre_nameColumn" msprop:Generator_UserColumnName="genre_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Playlist" msprop:Generator_TableClassName="PlaylistDataTable" msprop:Generator_TableVarName="tablePlaylist" msprop:Generator_TablePropName="Playlist" msprop:Generator_RowDeletingName="PlaylistRowDeleting" msprop:Generator_UserTableName="Playlist" msprop:Generator_RowChangingName="PlaylistRowChanging" msprop:Generator_RowEvHandlerName="PlaylistRowChangeEventHandler" msprop:Generator_RowDeletedName="PlaylistRowDeleted" msprop:Generator_RowEvArgName="PlaylistRowChangeEvent" msprop:Generator_RowChangedName="PlaylistRowChanged" msprop:Generator_RowClassName="PlaylistRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="playlist_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnplaylist_id" msprop:Generator_ColumnPropNameInRow="playlist_id" msprop:Generator_ColumnPropNameInTable="playlist_idColumn" msprop:Generator_UserColumnName="playlist_id" type="xs:int" minOccurs="0" />
+              <xs:element name="playlist_name" msprop:Generator_ColumnVarNameInTable="columnplaylist_name" msprop:Generator_ColumnPropNameInRow="playlist_name" msprop:Generator_ColumnPropNameInTable="playlist_nameColumn" msprop:Generator_UserColumnName="playlist_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="PlaylistEntry" msprop:Generator_TableClassName="PlaylistEntryDataTable" msprop:Generator_TableVarName="tablePlaylistEntry" msprop:Generator_TablePropName="PlaylistEntry" msprop:Generator_RowDeletingName="PlaylistEntryRowDeleting" msprop:Generator_UserTableName="PlaylistEntry" msprop:Generator_RowChangingName="PlaylistEntryRowChanging" msprop:Generator_RowEvHandlerName="PlaylistEntryRowChangeEventHandler" msprop:Generator_RowDeletedName="PlaylistEntryRowDeleted" msprop:Generator_RowEvArgName="PlaylistEntryRowChangeEvent" msprop:Generator_RowChangedName="PlaylistEntryRowChanged" msprop:Generator_RowClassName="PlaylistEntryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="playlist_id" msprop:Generator_ColumnVarNameInTable="columnplaylist_id" msprop:Generator_ColumnPropNameInRow="playlist_id" msprop:Generator_ColumnPropNameInTable="playlist_idColumn" msprop:Generator_UserColumnName="playlist_id" type="xs:int" minOccurs="0" />
+              <xs:element name="titel_id" msprop:Generator_ColumnVarNameInTable="columntitel_id" msprop:Generator_ColumnPropNameInRow="titel_id" msprop:Generator_ColumnPropNameInTable="titel_idColumn" msprop:Generator_UserColumnName="titel_id" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Interpreten" />
+      <xs:field xpath="mstns:interpret_id" />
+    </xs:unique>
+    <xs:unique name="Titel_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Titel" />
+      <xs:field xpath="mstns:titel_id" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:Titel" />
+      <xs:field xpath="mstns:titel_interpret" />
+    </xs:unique>
+    <xs:unique name="Constraint3">
+      <xs:selector xpath=".//mstns:Titel" />
+      <xs:field xpath="mstns:titel_album" />
+    </xs:unique>
+    <xs:unique name="Constraint4">
+      <xs:selector xpath=".//mstns:Titel" />
+      <xs:field xpath="mstns:titel_genre" />
+    </xs:unique>
+    <xs:unique name="AlbumKey1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Album" />
+      <xs:field xpath="mstns:album_id" />
+    </xs:unique>
+    <xs:unique name="Album_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Album" />
+      <xs:field xpath="mstns:album_interpret" />
+    </xs:unique>
+    <xs:unique name="Genre_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Genre" />
+      <xs:field xpath="mstns:genre_id" />
+    </xs:unique>
+    <xs:unique name="Playlist_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Playlist" />
+      <xs:field xpath="mstns:playlist_id" />
+    </xs:unique>
+    <xs:keyref name="Titel_PlaylistEntry" refer="Titel_Constraint1" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:PlaylistEntry" />
+      <xs:field xpath="mstns:titel_id" />
+    </xs:keyref>
+    <xs:keyref name="Playlist_PlaylistEntry" refer="Playlist_Constraint1" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:PlaylistEntry" />
+      <xs:field xpath="mstns:playlist_id" />
+    </xs:keyref>
+    <xs:keyref name="Titel_Genre" refer="Constraint4" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:Genre" />
+      <xs:field xpath="mstns:genre_id" />
+    </xs:keyref>
+    <xs:keyref name="Titel_Album" refer="Constraint3" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:Album" />
+      <xs:field xpath="mstns:album_id" />
+    </xs:keyref>
+    <xs:keyref name="Album_Interpreten" refer="Album_Constraint1" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:Interpreten" />
+      <xs:field xpath="mstns:interpret_id" />
+    </xs:keyref>
+    <xs:keyref name="Titel_Interpreten" refer="Constraint2" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:Interpreten" />
+      <xs:field xpath="mstns:interpret_id" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

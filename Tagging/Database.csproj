@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{46EF982B-C5E2-4847-9F79-C70A8669ED12}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Audiosort</RootNamespace>
+    <AssemblyName>Audiosort.Database</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AudiosortDataset.cs">
+      <DependentUpon>AudiosortDataset.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AudiosortDataset.designer.cs">
+      <DependentUpon>AudiosortDataset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AudiosortDataset1.Designer.cs">
+      <DependentUpon>AudiosortDataset.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CDDBCache.cs" />
+    <Compile Include="CDDBCacheDataSet.cs">
+      <DependentUpon>CDDBCacheDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CDDBCacheDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CDDBCacheDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseFiller.cs" />
+    <Compile Include="ID3v2\ID3ExtendedHeader.cs" />
+    <Compile Include="ID3v2\ID3Footer.cs" />
+    <Compile Include="ID3v2\ID3Frame.cs" />
+    <Compile Include="ID3v2\ID3Header.cs" />
+    <Compile Include="ID3v2\ID3Structure.cs" />
+    <Compile Include="ID3v2\ID3Tag.cs" />
+    <Compile Include="InvalidTagException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XslXmlTextWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AudiosortDataset.xsc">
+      <DependentUpon>AudiosortDataset.xsd</DependentUpon>
+    </None>
+    <None Include="AudiosortDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AudiosortDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AudiosortDataset.xss">
+      <DependentUpon>AudiosortDataset.xsd</DependentUpon>
+    </None>
+    <None Include="CDDBCacheDataSet.xsc">
+      <DependentUpon>CDDBCacheDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CDDBCacheDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CDDBCacheDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CDDBCacheDataSet.xss">
+      <DependentUpon>CDDBCacheDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Codecs\Codecs.csproj">
+      <Project>{A9115782-B867-479E-90CC-0E4E996AEAE0}</Project>
+      <Name>Codecs</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

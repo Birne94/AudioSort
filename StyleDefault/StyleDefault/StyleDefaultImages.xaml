@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <BitmapImage x:Key="img_menuitem_file" UriSource="/StyleDefault;component/Images/icon_home.png" />
+    <BitmapImage x:Key="img_menuitem_view" UriSource="/StyleDefault;component/Images/icon_view.png" />
+    <BitmapImage x:Key="img_menuitem_tools" UriSource="/StyleDefault;component/Images/icon_tools.png" />
+    <BitmapImage x:Key="img_menuitem_help" UriSource="/StyleDefault;component/Images/icon_help.png" />
+    <BitmapImage x:Key="img_menuitem_options" UriSource="/StyleDefault;component/Images/icon_options.png" />
+    <BitmapImage x:Key="img_button_prev" UriSource="/StyleDefault;component/Images/button_prev.png" />
+    <BitmapImage x:Key="img_button_prev_hover" UriSource="/StyleDefault;component/Images/button_prev_hover.png" />
+    <BitmapImage x:Key="img_button_prev_click" UriSource="/StyleDefault;component/Images/button_prev_click.png" />
+    <BitmapImage x:Key="img_button_next" UriSource="/StyleDefault;component/Images/button_next.png" />
+    <BitmapImage x:Key="img_button_next_hover" UriSource="/StyleDefault;component/Images/button_next_hover.png" />
+    <BitmapImage x:Key="img_button_next_click" UriSource="/StyleDefault;component/Images/button_next_click.png" />
+    <BitmapImage x:Key="img_button_play" UriSource="/StyleDefault;component/Images/button_play.png" />
+    <BitmapImage x:Key="img_button_play_hover" UriSource="/StyleDefault;component/Images/button_play_hover.png" />
+    <BitmapImage x:Key="img_button_play_click" UriSource="/StyleDefault;component/Images/button_play_click.png" />
+    <BitmapImage x:Key="img_button_pause" UriSource="/StyleDefault;component/Images/button_pause.png" />
+    <BitmapImage x:Key="img_button_pause_hover" UriSource="/StyleDefault;component/Images/button_pause_hover.png" />
+    <BitmapImage x:Key="img_button_pause_click" UriSource="/StyleDefault;component/Images/button_pause_click.png" />
+    <BitmapImage x:Key="img_button_stop" UriSource="/StyleDefault;component/Images/button_stop.png" />
+    <BitmapImage x:Key="img_button_stop_hover" UriSource="/StyleDefault;component/Images/button_stop_hover.png" />
+    <BitmapImage x:Key="img_button_stop_click" UriSource="/StyleDefault;component/Images/button_stop_click.png" />
+    <BitmapImage x:Key="img_slider" UriSource="/StyleDefault;component/Images/slider.png" />
+    <BitmapImage x:Key="img_slider_hover" UriSource="/StyleDefault;component/Images/slider_hover.png" />
+    <BitmapImage x:Key="img_star" UriSource="/StyleDefault;component/Images/star.png" />
+    <BitmapImage x:Key="img_star1" UriSource="/StyleDefault;component/Images/star1.png" />
+    <BitmapImage x:Key="img_star2" UriSource="/StyleDefault;component/Images/star2.png" />
+    <BitmapImage x:Key="img_star3" UriSource="/StyleDefault;component/Images/star3.png" />
+    <BitmapImage x:Key="img_star4" UriSource="/StyleDefault;component/Images/star4.png" />
+    <BitmapImage x:Key="img_star5" UriSource="/StyleDefault;component/Images/star5.png" />
+</ResourceDictionary>

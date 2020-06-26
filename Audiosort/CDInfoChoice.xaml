@@ -1,0 +1,15 @@
+﻿<Window x:Class="Audiosort.CDInfoChoice"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CD-Informationen" SizeToContent="WidthAndHeight"
+        ResizeMode="NoResize"
+        Icon="/audiosort.ico">
+    <StackPanel>
+        <Label Content="Es wurden mehrere Möglichkeiten gefunden:" />
+        <ListBox Height="300" Width="500" Name="ResultListBox" />
+        <DockPanel Margin="5">
+            <Button Width="200" HorizontalAlignment="Left" Content="OK" Click="ButtonOk_Click" />
+            <Button Width="200" HorizontalAlignment="Right" Content="Abbrechen" Click="ButtonCancel_Click" />
+        </DockPanel>
+    </StackPanel>
+</Window>

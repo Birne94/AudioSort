@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50458674-9D74-48F7-A6DA-884C6843ADA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Audiosort.Plugins</RootNamespace>
+    <AssemblyName>StyleDefault</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="StyleSemi.cs" />
+    <Compile Include="StyleBunt.cs" />
+    <Compile Include="PluginInformation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="StyleDefault.cs" />
+    <Compile Include="StyleInformation.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Audiosort\Audiosort.csproj">
+      <Project>{539F843A-3285-4339-9936-6D4DD1D11AC3}</Project>
+      <Name>Audiosort</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_next_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_next_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_pause_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_pause_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_play_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_play_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_prev.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_prev_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_prev_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_tools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_view.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\slider.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\slider_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\slider_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\button_stop.png" />
+    <Resource Include="Images\button_stop_click.png" />
+    <Resource Include="Images\button_stop_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\icon_options.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefault.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefaultSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefaultButtons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefaultImages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefaultMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefaultPlaylist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleBunt\StyleDefault.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleBunt\StyleDefaultButtons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleBunt\StyleDefaultImages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleBunt\StyleDefaultMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleBunt\StyleDefaultPlaylist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleBunt\StyleDefaultSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleDefault\StyleDefaultContextMenus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cd.png" />
+    <Resource Include="Images\cd_add.png" />
+    <Resource Include="Images\cd_delete.png" />
+    <Resource Include="Images\cd_edit.png" />
+    <Resource Include="Images\cd_eject.png" />
+    <Resource Include="Images\cd_go.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\folder_magnify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\music.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\star1.png" />
+    <Resource Include="Images\star2.png" />
+    <Resource Include="Images\star3.png" />
+    <Resource Include="Images\star4.png" />
+    <Resource Include="Images\star5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\control_fastforward_blue.png" />
+    <Resource Include="Images\control_pause_blue.png" />
+    <Resource Include="Images\control_play_blue.png" />
+    <Resource Include="Images\control_rewind_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefault.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefaultButtons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefaultContextMenus.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefaultImages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefaultMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefaultPlaylist.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="StyleSemi\StyleDefaultSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cp $(TargetPath) $(SolutionDir)\Audiosort\bin\Debug\Styles\$(TargetFileName)
+cp $(TargetPath) $(SolutionDir)\Audiosort\bin\Release\Styles\$(TargetFileName)</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

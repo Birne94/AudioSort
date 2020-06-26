@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CDDBCacheDataSet" targetNamespace="http://tempuri.org/CDDBCacheDataSet.xsd" xmlns:mstns="http://tempuri.org/CDDBCacheDataSet.xsd" xmlns="http://tempuri.org/CDDBCacheDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CDDBCacheDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CDDBCacheDataSet" msprop:Generator_UserDSName="CDDBCacheDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Titel" msprop:Generator_TableClassName="TitelDataTable" msprop:Generator_TableVarName="tableTitel" msprop:Generator_TablePropName="Titel" msprop:Generator_RowDeletingName="TitelRowDeleting" msprop:Generator_UserTableName="Titel" msprop:Generator_RowChangingName="TitelRowChanging" msprop:Generator_RowEvHandlerName="TitelRowChangeEventHandler" msprop:Generator_RowDeletedName="TitelRowDeleted" msprop:Generator_RowEvArgName="TitelRowChangeEvent" msprop:Generator_RowChangedName="TitelRowChanged" msprop:Generator_RowClassName="TitelRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="title_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columntitle_id" msprop:Generator_ColumnPropNameInRow="title_id" msprop:Generator_ColumnPropNameInTable="title_idColumn" msprop:Generator_UserColumnName="title_id" type="xs:int" minOccurs="0" />
+              <xs:element name="disc_id" msprop:nullValue="_throw" msprop:Generator_ColumnPropNameInRow="disc_id" msprop:Generator_ColumnVarNameInTable="columndisc_id" msprop:Generator_ColumnPropNameInTable="disc_idColumn" msprop:Generator_UserColumnName="disc_id" type="xs:int" minOccurs="0" />
+              <xs:element name="title_name" msprop:Generator_ColumnVarNameInTable="columntitle_name" msprop:Generator_ColumnPropNameInRow="title_name" msprop:Generator_ColumnPropNameInTable="title_nameColumn" msprop:Generator_UserColumnName="title_name" type="xs:string" minOccurs="0" />
+              <xs:element name="title_artist" msprop:Generator_ColumnVarNameInTable="columntitle_artist" msprop:Generator_ColumnPropNameInRow="title_artist" msprop:Generator_ColumnPropNameInTable="title_artistColumn" msprop:Generator_UserColumnName="title_artist" type="xs:string" minOccurs="0" />
+              <xs:element name="title_album" msprop:Generator_ColumnVarNameInTable="columntitle_album" msprop:Generator_ColumnPropNameInRow="title_album" msprop:Generator_ColumnPropNameInTable="title_albumColumn" msprop:Generator_UserColumnName="title_album" type="xs:string" minOccurs="0" />
+              <xs:element name="title_year" msprop:Generator_ColumnVarNameInTable="columntitle_year" msprop:Generator_ColumnPropNameInRow="title_year" msprop:Generator_ColumnPropNameInTable="title_yearColumn" msprop:Generator_UserColumnName="title_year" type="xs:int" minOccurs="0" />
+              <xs:element name="title_genre" msprop:Generator_ColumnVarNameInTable="columntitle_genre" msprop:Generator_ColumnPropNameInRow="title_genre" msprop:Generator_ColumnPropNameInTable="title_genreColumn" msprop:Generator_UserColumnName="title_genre" type="xs:string" minOccurs="0" />
+              <xs:element name="title_track" msprop:Generator_ColumnVarNameInTable="columntitle_track" msprop:Generator_ColumnPropNameInRow="title_track" msprop:Generator_ColumnPropNameInTable="title_trackColumn" msprop:Generator_UserColumnName="title_track" type="xs:int" minOccurs="0" />
+              <xs:element name="title_comment" msprop:nullValue="_empty" msprop:Generator_ColumnPropNameInRow="title_comment" msprop:Generator_ColumnVarNameInTable="columntitle_comment" msprop:Generator_ColumnPropNameInTable="title_commentColumn" msprop:Generator_UserColumnName="title_comment" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Discs" msprop:Generator_TableClassName="DiscsDataTable" msprop:Generator_TableVarName="tableDiscs" msprop:Generator_TablePropName="Discs" msprop:Generator_RowDeletingName="DiscsRowDeleting" msprop:Generator_UserTableName="Discs" msprop:Generator_RowChangingName="DiscsRowChanging" msprop:Generator_RowEvHandlerName="DiscsRowChangeEventHandler" msprop:Generator_RowDeletedName="DiscsRowDeleted" msprop:Generator_RowEvArgName="DiscsRowChangeEvent" msprop:Generator_RowChangedName="DiscsRowChanged" msprop:Generator_RowClassName="DiscsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="disc_id" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columndisc_id" msprop:Generator_ColumnPropNameInRow="disc_id" msprop:Generator_ColumnPropNameInTable="disc_idColumn" msprop:Generator_UserColumnName="disc_id" type="xs:int" minOccurs="0" />
+              <xs:element name="disc_cddbid" msprop:Generator_ColumnVarNameInTable="columndisc_cddbid" msprop:Generator_ColumnPropNameInRow="disc_cddbid" msprop:Generator_ColumnPropNameInTable="disc_cddbidColumn" msprop:Generator_UserColumnName="disc_cddbid" type="xs:string" minOccurs="0" />
+              <xs:element name="disc_title" msprop:Generator_ColumnVarNameInTable="columndisc_title" msprop:Generator_ColumnPropNameInRow="disc_title" msprop:Generator_ColumnPropNameInTable="disc_titleColumn" msprop:Generator_UserColumnName="disc_title" type="xs:string" minOccurs="0" />
+              <xs:element name="disc_artist" msprop:Generator_ColumnVarNameInTable="columndisc_artist" msprop:Generator_ColumnPropNameInRow="disc_artist" msprop:Generator_ColumnPropNameInTable="disc_artistColumn" msprop:Generator_UserColumnName="disc_artist" type="xs:string" minOccurs="0" />
+              <xs:element name="disc_year" msprop:Generator_ColumnVarNameInTable="columndisc_year" msprop:Generator_ColumnPropNameInRow="disc_year" msprop:Generator_ColumnPropNameInTable="disc_yearColumn" msprop:Generator_UserColumnName="disc_year" type="xs:int" minOccurs="0" />
+              <xs:element name="disc_genre" msprop:Generator_ColumnVarNameInTable="columndisc_genre" msprop:Generator_ColumnPropNameInRow="disc_genre" msprop:Generator_ColumnPropNameInTable="disc_genreColumn" msprop:Generator_UserColumnName="disc_genre" type="xs:string" minOccurs="0" />
+              <xs:element name="disc_extended_data" msprop:Generator_ColumnVarNameInTable="columndisc_extended_data" msprop:Generator_ColumnPropNameInRow="disc_extended_data" msprop:Generator_ColumnPropNameInTable="disc_extended_dataColumn" msprop:Generator_UserColumnName="disc_extended_data" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:Titel" />
+      <xs:field xpath="mstns:title_id" />
+    </xs:unique>
+    <xs:unique name="Discs_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:Discs" />
+      <xs:field xpath="mstns:disc_id" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Discs_Titel" msdata:parent="Discs" msdata:child="Titel" msdata:parentkey="disc_id" msdata:childkey="disc_id" msprop:Generator_UserChildTable="Titel" msprop:Generator_ChildPropName="GetTitelRows" msprop:Generator_UserParentTable="Discs" msprop:Generator_UserRelationName="Discs_Titel" msprop:Generator_RelationVarName="relationDiscs_Titel" msprop:Generator_ParentPropName="DiscsRow" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
